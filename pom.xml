@@ -31,6 +31,11 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
+      <groupId>guru.jini.backdraft</groupId>
+      <artifactId>client-quarkus</artifactId>
+      <version>999-SNAPSHOT</version>
+</dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-resteasy</artifactId>
     </dependency>
@@ -46,16 +51,17 @@
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-kubernetes</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-health</artifactId>
     </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-container-image-s2i</artifactId>
     </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-kubernetes</artifactId>
+    </dependency>
+    
   </dependencies>
   <build>
     <plugins>
